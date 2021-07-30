@@ -1,0 +1,139 @@
+.body {
+    width: 100vw;
+}
+.contents {
+    padding-top: 60px;
+}
+.contents p {
+    padding: 8px;
+    line-height: 1.5;
+    font-size: 0.9em;
+}
+h1 {
+    font-size: 2em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+h1 img {
+   width: 50%;
+   max-width: 200px;
+   height: auto;
+}
+
+h2 {
+    margin: 8px;
+    font-size: 1.3em;
+}
+
+h2 .alphabet {
+    font-size: 0.7em;
+    margin-left: 2px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
+}
+.margin-16 {
+    margin: 16px;
+}
+.padding-16 {
+    padding: 16px;
+}
+.padding-8 {
+    padding: 8px;
+}
+.flex {
+    display: flex;
+}
+.flex-between {
+    justify-content: space-between;
+}
+.navigation__pc {
+    display: none;
+}
+.navigation__mobile--menu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 1000;
+}
+.navigation__mobile {
+    display: flex;
+    padding: 16px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 0 8px rgba(150, 150, 150, 0.7);
+}
+.hamburger {
+    color: gray;
+    font-size: 1.6em;
+}
+.main {
+    display: block;
+}
+.contents {
+    width: 100%;
+}
+.contents img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 0 4px 0;
+}
+.navigation__menu {
+    margin: 64px 0 32px 0;
+}
+.navigation__menu > li {
+    margin: 16px 0;
+}
+.navigation__menu > li a {
+    color: gray;
+    font-size: 1.1em;
+}
+.navigation__icons a {
+    font-size: 1.3em;
+    display: inline-block;
+    margin: 0 4px 0 0;
+    color: gray;
+}
+.contents__img {
+    margin: 16px 0 0 0;
+    display: block;
+}
+@media screen and (min-width:480px) {
+    .contents {
+        padding-top: 0;
+    }
+    h1 img {
+        width: 90%;
+    }
+    .navigation__pc {
+        display: block;
+        width: 30%;
+        margin-top: 60px;
+    }
+    .navigation__pc--in {
+        display: block;
+        height: fit-content;
+        position: fixed;
+    }
+    .navigation__mobile {
+        display: none;
+    }
+    .main {
+        display: flex;
+    }
+    .contents {
+        width: 70%;
+    }
+}
